@@ -1,0 +1,12 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "scripts": {
+    "mongo": "c:/Program Files/MongoDB/Server/3.2/bin/mongod --dbpath c:/data"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13",
+    "body-parser": "~1.0.1"
+  }
+}
