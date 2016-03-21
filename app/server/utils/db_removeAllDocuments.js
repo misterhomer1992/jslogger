@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var Log = require('./models/log');
+var Log = require('././log');
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
