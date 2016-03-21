@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var APIRouters = require('./APIRouters');
+var routers = require('./_routers');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -17,7 +17,7 @@ var allowCrossDomain = function (req, res, next) {
 };
 
 app.use(allowCrossDomain);
-app.use('/api', APIRouters);
+app.use('/api', routers);
 app.listen(port);
 
 console.log('Start server on 127.0.0.1:' + port);
