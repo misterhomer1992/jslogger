@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var routers = require('./_routers');
+var routers = require('./routers');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());

@@ -15,7 +15,8 @@ LogSchema.remove({}, function() {
 Promise.all([
     dataBase.setEmailSender('js.logger.service@gmail.com'),
     dataBase.setEmailReceivers([
-        'misterhomer1992@gmail.com'
+        'misterhomer1992@gmail.com',
+        //'oli4ka271994@gmail.com'
     ])
 ])
 .then(function() {
